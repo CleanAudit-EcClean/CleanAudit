@@ -1,0 +1,50 @@
+These files must be visible in the GitHub repository root:
+
+package.json
+README.md
+FILES_INCLUDED.txt
+src/app/layout.js
+src/app/page.js
+src/app/globals.css
+public/manifest.json
+
+The file src/app/layout.js starts with: import './globals.css';
+The file package.json starts with: {
+
+{
+  "name": "cleanaudit-vercel-final",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.16",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {}
+}
+
+# CleanAudit Phase 1
+
+This is a Vercel-ready Next.js project.
+
+## Admin demo login
+- Email: admin@cleanaudit.co.za
+- Password: password123
+
+The login is demo-only. Real authentication comes in Phase 2 with Supabase Auth.
+
+## Deploy to Vercel
+1. Unzip this folder.
+2. Upload the CONTENTS of the folder to a new GitHub repo.
+3. Your repo root must contain package.json, src, public, and README.md.
+4. Import the repo in Vercel.
+5. Framework preset: Next.js.
+6. Build command: npm run build.
+7. Output directory: leave blank.
+
+IMPORTANT: package.json must be JSON. It must not contain any import statements.
